@@ -39,6 +39,8 @@
     "typescript": "^4.2.4"
   },
   "dependencies": {
+    "@eagletrt/code-generator": "^4.0.2",
+    "@eagletrt/telemetria-postprocessing": "^3.2.4",
     "yargs": "^16.2.0"
   }
 }
