@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@eagletrt/code-generator": "^4.0.3",
-    "@eagletrt/telemetria-postprocessing": "^3.2.4",
+    "@eagletrt/telemetria-postprocessing": "^3.3.0",
     "yargs": "^16.2.0"
   }
 }
