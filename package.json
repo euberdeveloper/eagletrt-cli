@@ -2,12 +2,24 @@
   "name": "eagle-cli",
   "version": "1.0.0",
   "description": "The command line interface of @eagletrt",
-  "main": "index.js",
+  "bin": {
+    "eagle": "dist/index.js"
+  },
   "scripts": {
+    "clean": "shx rm -rf dist",
+    "pretranspile": "npm run clean",
     "transpile": "tsc -p source",
     "lint": "eslint source/**/*.ts --format codeframe",
-    "lint:fix": "eslint --fix source/**/*.ts --format codeframe"
+    "lint:fix": "eslint --fix source/**/*.ts --format codeframe",
+    "commit": "cz",
+    "commit:sign": "cz -S"
   },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eagletrt/eagle-cli.git"
@@ -31,16 +43,25 @@
     "@types/yargs": "^16.0.1",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-unicorn": "^31.0.0",
     "prettier": "^2.2.1",
+    "shx": "^0.3.3",
     "typescript": "^4.2.4"
   },
   "dependencies": {
-    "@eagletrt/code-generator": "^4.0.3",
+    "@eagletrt/code-generator": "^4.0.4",
     "@eagletrt/telemetria-postprocessing": "^3.3.6",
+    "@eagletrt/telemetria-simulator": "^4.0.3",
     "yargs": "^16.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
