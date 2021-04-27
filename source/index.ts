@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import * as yargs from 'yargs';
 import * as fs from 'fs';
+import * as os from 'os';
 import * as path from 'path';
 
 import * as postProcessingCommands from '@eagletrt/telemetria-postprocessing/bundled/bin/commands';
@@ -124,7 +125,7 @@ yargs
                     describe: 'The path to the .bashrc file where the bash code will be added',
                     type: 'string',
                     alias: 'p',
-                    default: '~/.bashrc'
+                    default: path.join(os.homedir(), '.bashrc')
                 },
                 'src': {
                     describe: 'The path to the file containing the bash code to add to your .bashrc',
