@@ -1,6 +1,6 @@
 {
   "name": "@eagletrt/cli",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The command line interface of @eagletrt",
   "bin": {
     "eagle": "bundled/index.js"
@@ -58,14 +58,14 @@
     "shx": "^0.3.3",
     "ts-loader": "^9.1.1",
     "typescript": "^4.2.4",
-    "webpack-cli": "^4.6.0"
+    "webpack": "^5.36.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-node-externals": "^3.0.0"
   },
   "dependencies": {
     "@eagletrt/code-generator": "^4.0.4",
     "@eagletrt/telemetria-postprocessing": "^3.3.6",
     "@eagletrt/telemetria-simulator": "^4.0.3",
-    "webpack": "^5.36.0",
-    "webpack-node-externals": "^3.0.0",
     "yargs": "^16.2.0"
   },
   "config": {
