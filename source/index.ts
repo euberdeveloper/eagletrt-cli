@@ -113,6 +113,11 @@ yargs
             simulatorCommands.settingsCommand.handler(args) as unknown;
         }
     )
+    .completion(
+        '__generate_completion',
+        'creates the completion bash script to add o your .bashrc in order to have the tab autocompletion for this cli service',
+        () => {}
+    )
     .demandCommand(1, 'You must specify a command')
     .strict()
     .epilogue('For more information, find our manual at https://github.com/euberdeveloper/eagle-cli#readme').argv;
