@@ -1,5 +1,5 @@
 {
-  "name": "eagle-cli",
+  "name": "@eagletrt/cli",
   "version": "1.0.0",
   "description": "The command line interface of @eagletrt",
   "bin": {
