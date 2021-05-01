@@ -2,9 +2,6 @@ const path = require('path');
 const webpack = require('webpack');
 const nodeExternals = require('webpack-node-externals');
 
-const { version } = require('./package.json');
-process.env.MODULE_VERSION = version;
-
 const binConfig = {
     target: 'node',
     mode: 'production',
@@ -15,8 +12,7 @@ const binConfig = {
     plugins: [
         new webpack.BannerPlugin({ banner: '#!/usr/bin/env node', raw: true }),
         new webpack.EnvironmentPlugin({
-            'IS_WEBPACK': true,
-            'MODULE_VERSION': version
+            'IS_WEBPACK': true
         })
     ],
     module: {

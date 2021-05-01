@@ -120,5 +120,4 @@ yargs
     )
     .demandCommand(1, 'You must specify a command')
     .strict()
-    .version(process.env.MODULE_VERSION as string)
     .epilogue('For more information, find our manual at https://github.com/eagletrt/eagle-cli#readme').argv;
