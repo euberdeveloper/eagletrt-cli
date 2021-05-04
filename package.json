@@ -1,6 +1,6 @@
 {
   "name": "@eagletrt/cli",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "The command line interface of @eagletrt",
   "bin": {
     "eagle": "bundled/index.js"
