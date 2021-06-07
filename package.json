@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "@eagletrt/code-generator": "^4.2.0",
+    "@eagletrt/telemetria-postprocessing": "^3.4.3",
     "@eagletrt/telemetria-simulator": "^4.0.5",
     "yargs": "^16.2.0"
   },
